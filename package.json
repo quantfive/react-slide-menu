@@ -1,22 +1,23 @@
 {
-  "name": "create-react-library",
-  "version": "1.1.0",
-  "description": "React NPM library starter kit based on Facebook's create react app",
+  "name": "react-slide-menu",
+  "version": "0.1.1",
+  "description": "A React.js menu that slides in and out",
   "main": "build/index.js",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "npmpublish": "./scripts/publish.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/udiliaInc/create-react-library.git"
+    "url": "git+https://github.com/quantfive/react-slide-menu.git"
   },
-  "author": "Dimitri Mikadze <dimitri@udilia.com>",
+  "author": "Q5 <patrick@quantfive.org>",
   "bugs": {
-    "url": "https://github.com/udiliaInc/create-react-library/issues"
+    "url": "https://github.com/quantfive/react-slide-menu/issues"
   },
-  "homepage": "https://github.com/udiliaInc/create-react-library#readme",
+  "homepage": "https://github.com/quantfive/react-slide-menu#readme",
   "license": "MIT",
   "dependencies": {
     "aphrodite": "^1.2.5",
@@ -101,6 +102,16 @@
       "node"
     ]
   },
+  "keywords": [
+    "react",
+    "menu",
+    "slide",
+    "react-slide-menu",
+    "navbar",
+    "navigation",
+    "component",
+    "sidebar"
+  ],
   "babel": {
     "presets": [
       "react-app"

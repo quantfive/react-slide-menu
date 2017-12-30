@@ -41,8 +41,9 @@ export default class Nav extends React.Component {
     });
     return (
       <div className={css(styles.nav) +  ` ${this.props.navClassName ? this.props.navClassName: ''}`} onClick={this.props.closeMenu}>
+        { this.props.extraComponentTop }
         { nav }
-        { this.props.extraComponent }
+        { this.props.extraComponentBottom }
       </div>
     );
   }

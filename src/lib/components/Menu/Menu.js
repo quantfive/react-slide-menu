@@ -43,7 +43,8 @@ export default class Menu extends React.Component {
             closeMenu={this.props.closeMenu}
             navClassName={this.props.navClassName}
             tagLine={this.props.tagLine}
-            extraComponent={this.props.extraComponent}
+            extraComponentBottom={this.props.extraComponentBottom}
+            extraComponentTop={this.props.extraComponentTop}
             navLinkStyle={this.props.navLinkStyle}
           />
         </div>

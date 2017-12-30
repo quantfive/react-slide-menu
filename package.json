@@ -1,6 +1,6 @@
 {
   "name": "react-slide-menu",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "A React.js menu that slides in and out",
   "main": "build/index.js",
   "scripts": {

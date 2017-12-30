@@ -53,6 +53,7 @@ var styles = StyleSheet.create({
     padding: '20px',
     textAlign: 'center',
     width: '100%',
+    minHeight: '100%',
   },
   navItem: {
     marginBottom: '25px',

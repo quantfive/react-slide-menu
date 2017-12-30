@@ -76,7 +76,7 @@ var styles = StyleSheet.create({
     alignItems: 'center',
     height: '100%',
     width: '230px',
-    minHeight: '100%',
+    minHeight: '100vh',
   },
   navColor: {
     background: '#272d34',

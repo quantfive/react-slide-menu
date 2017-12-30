@@ -1,64 +1,84 @@
-# React NPM library starter kit
+# React Slide Menu
 
 [![Build Status](https://travis-ci.org/UdiliaInc/create-react-library.svg?branch=master)](https://travis-ci.org/UdiliaInc/create-react-library)
 [![Dependencies](https://img.shields.io/david/udiliaInc/create-react-library.svg)]()
 [![Dev Dependencies](https://img.shields.io/david/dev/udiliaInc/create-react-library.svg)]()
 
-based on Facebook's <a href="https://github.com/facebookincubator/create-react-app" target="_blank">Create react app</a>.
-We are constantly updating repository with the updates of `create-react-app`, so we have all new features and bug fixes of it.
+[![npm download][download-image]][download-url]
 
-## Converted to custom setup
+[download-image]: https://img.shields.io/npm/dm/react-slide-menu.svg?style=flat-square
+[download-url]: https://www.npmjs.com/package/react-slide-menu
 
-Moved all dependencies to dev dependencies because we don't need extra dependencies for our library after build, but we want all this features while developing: 
+## Demo
 
-* React, JSX, ES6, and Flow syntax support.
-* Language extras beyond ES6 like the object spread operator.
-* A dev server that lints for common errors.
-* Import CSS and image files directly from JavaScript.
-* Autoprefixed CSS, so you don’t need `-webkit` or other prefixes.
-* A `build` script to bundle JS, CSS, and images for production.
+TBD
 
-## Getting Started
+## Install the package
+Use NPM or Yarn
 
-Clone repo
+```sh
+yarn add react-slide-menu
+```
 
-````
-git clone https://github.com/udiliaInc/create-react-library.git
-````
+```sh
+npm install --save react-slide-menu
+```
 
-Install dependencies
+## Usage
 
-`npm install` or `yarn install`
+1 . Require react-atmosphere-menu after installation
 
-Start development server
+```js
+import SlideMenu from 'react-slide-menu'
+```
 
-`npm start` or `yarn start`
+2 . Wrap react-slide-menu around your app
 
-Runs the demo app in development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Library files
+```js
+<SlideMenu>
+  <YOUR APP />
+</SlideMenu>
+```
 
-All library files are located inside `src/lib`  
+3 . Customize options
 
-## Demo app
+```js
+var nav = [
+  {id: 'home', label: 'Home', path: '/'},
+  {id: 'about', label: 'About', path: '/about'},
+  {id: 'discover', label: 'Discover', path: '/discover'},
+]
+<SlideMenu
+  active={this.state.slideMenuActive}
+  nav={nav}
+  reactRouter={true}
+  closeMenu={() => this.setState({slideMenuActive: false})}>
+  <YOUR APP />
+</SlideMenu
+```
 
-Is located inside `src/demo` directory, here you can test your library while developing
+## Main Options
+Option|Type	|  Description
+|:---|:---|:---
+ active	|  Boolean  | `true` will show the menu and `false` will hide the menu. (Required)
+ nav	|  Array  | An array of objects that describe the navigation menu. Each object needs to have keys `id`, `label`, and `path`. (Required)
+ reactRouter |  Boolean  | `true` if you use React Router in your project `false` if you don't.
+ extraComponent |  Component  | Displayed after the Nav you can add anything you want, add a component for a logo or something else like so: `<img src={LOGO} />`.
+ closeMenu |  Function  | The function that closes your atmosphere menu. Should set the variable for the `active` prop to false.
+ 
+ ## Extra Options / Styling options
+ Option|Type	|  Description
+|:---|:---|:---
+ menuClassName |  String  | Extra class to style the AtmosphereMenu component. Default: `menu: { position: 'relative', overflow: 'hidden', },`
+ appClassName	|  String  | Extra class to style your app when the menu is active.
+ companyClassName	|  String  | Extra class to style the `companyName` text.
+ navItemClassName |  String  | Extra class to style each Navigation item. Default: `navItem: { marginBottom: '25px', opacity: '.7', ':hover': { opacity: '1',}},`
+ navLinkStyle |  String  | Extra prop to style the `<a>` or `Link` element of each Navigation Item. Default: `linkStyle: { textDecoration: 'none', color: '#fff', fontWeight: '300', '@media only screen and (min-width: 768px)': { fontSize: '2em', }, '@media only screen and (min-width: 1440px)': { fontSize: '2.5em', }},`
+ linkClassName |  String  | Extra class to style the `<a>` or `Link` element of each Navigation item. Has the same style default as above `navLinkStyle`.
+ navClassName  |  String  | Extra class to style the whole Nav component.
 
-## Testing
-
-`npm run test` or `yarn run test`
-
-## Build library
-
-`npm run build` or `yarn run build`
-
-Produces production version of library under the `build` folder.
-
-## Publish library
-
-`npm publish`
-
-## Example library built with this starter kit
-
-https://github.com/UdiliaInc/react-under-construction
+## Inspired by
+www.youtube.com
+and
+www.typeform.com

@@ -10,7 +10,6 @@ import Nav from './components/Nav';
 
 // NPM Modules
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { fadeInRight } from 'react-animations';
 
 export default class Menu extends React.Component {
   /***

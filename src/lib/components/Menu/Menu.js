@@ -34,7 +34,7 @@ export default class Menu extends React.Component {
     return (
       <div
         className={css(styles.menu, this.props.active && styles.menuActive) + ` ${this.props.menuClassName ? this.props.menuClassName : ''}`}>
-        <div className={` ${this.props.navWrapperClassName} ` + css(styles.navWrapper, this.props.navWrapperClassName ? null : styles.navColor)}>
+        <div className={` ${this.props.navWrapperClassName ? this.props.navWrapperClassName : ''} ` + css(styles.navWrapper, this.props.navWrapperClassName ? null : styles.navColor)}>
           <Nav
             nav={this.props.nav}
             navItemClassName={this.props.navItemClassName}
@@ -64,6 +64,7 @@ var styles = StyleSheet.create({
   app: {
     transition: 'all .4s cubic-bezier(.94,.06,.32,.95)',
     position: 'absolute',
+    minHeight: '100vh',
     width: '100%',
     height: '100%',
     top: '0',

@@ -1,8 +1,3 @@
-import Example from './components/Example';
-import SecondExample from './components/SecondExample';
+import Menu from './components/Menu/Menu';
 
-export default Example;
-
-export {
-  SecondExample,
-};
+export default Menu;

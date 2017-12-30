@@ -1,0 +1,25 @@
+.deploy {
+    color: #ff0084;
+    text-transform: uppercase;
+}
+
+.watermark {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    opacity: .8;
+    font-family: Roboto Mono, monospace;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    z-index: 99999;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.hello {
+    color: #000;
+    text-transform: uppercase;
+}

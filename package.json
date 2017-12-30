@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/udiliaInc/create-react-library#readme",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "aphrodite": "^1.2.5",
+    "react-animations": "^1.0.0",
+    "react-router-dom": "^4.2.2"
+  },
   "devDependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",

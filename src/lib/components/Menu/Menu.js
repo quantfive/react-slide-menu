@@ -64,12 +64,6 @@ var styles = StyleSheet.create({
   },
   app: {
     transition: 'all .4s cubic-bezier(.94,.06,.32,.95)',
-    position: 'absolute',
-    minHeight: '100vh',
-    width: '100%',
-    height: '100%',
-    top: '0',
-    left: '0',
     '-webkit-font-smoothing': 'subpixel-antialiased',
   },
   navWrapper: {
@@ -78,6 +72,10 @@ var styles = StyleSheet.create({
     height: '100%',
     width: '230px',
     minHeight: '100vh',
+    position: 'absolute',
+    zIndex: '-1',
+    top: '0',
+    left: '0',
   },
   navColor: {
     background: '#272d34',

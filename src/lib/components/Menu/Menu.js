@@ -34,7 +34,7 @@ export default class Menu extends React.Component {
     return (
       <div
         className={css(styles.menu, this.props.active && styles.menuActive) + ` ${this.props.menuClassName ? this.props.menuClassName : ''}`}>
-        <div className={` ${this.props.navWrapperClassName ? this.props.navWrapperClassName : ''} ` + css(styles.navWrapper, this.props.navWrapperClassName ? null : styles.navColor)}>
+        <div className={` ${this.props.navWrapperClassName ? this.props.navWrapperClassName : ''} ` + css(styles.navWrapper, this.props.active && styles.navActive)}>
           <Nav
             nav={this.props.nav}
             navItemClassName={this.props.navItemClassName}
@@ -75,6 +75,10 @@ var styles = StyleSheet.create({
     position: 'fixed',
     top: '0',
     left: '0',
+    zIndex: '-1',
+  },
+  navActive: {
+    zIndex: '0',
   },
   navColor: {
     background: '#272d34',

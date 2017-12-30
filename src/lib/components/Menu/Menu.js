@@ -76,12 +76,10 @@ var styles = StyleSheet.create({
     top: '0',
     left: '0',
     zIndex: '-1',
+    background: '#272d34',
   },
   navActive: {
     zIndex: '0',
-  },
-  navColor: {
-    background: '#272d34',
   },
   appScale: {
     transform: `translateX(${TRANSLATE}px)`,

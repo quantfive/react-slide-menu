@@ -92,7 +92,7 @@ var styles = StyleSheet.create({
     fontWeight: '300',
 
     '@media only screen and (min-width: 768px)': {
-      fontSize: '1em',
+      fontSize: '1.3em',
     },
 
     '@media only screen and (min-width: 1440px)': {

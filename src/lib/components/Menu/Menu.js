@@ -59,7 +59,6 @@ const TRANSLATE = 230; // the translation amount
 var styles = StyleSheet.create({
   menu: {
     position: 'relative',
-    overflow: 'hidden',
     height: '100%',
   },
   app: {

@@ -57,7 +57,7 @@ var styles = StyleSheet.create({
   },
   navItem: {
     marginBottom: '25px',
-    opacity: '.7',
+    opacity: '.5',
 
     ':hover': {
       opacity: '1',

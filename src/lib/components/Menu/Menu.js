@@ -61,6 +61,9 @@ var styles = StyleSheet.create({
     position: 'relative',
     height: '100%',
   },
+  menuActive: {
+    overflow: 'hidden',
+  },
   app: {
     transition: 'all .4s cubic-bezier(.94,.06,.32,.95)',
     '-webkit-font-smoothing': 'subpixel-antialiased',

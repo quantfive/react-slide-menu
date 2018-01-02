@@ -11,7 +11,9 @@
 
 ## Demo
 
-TBD
+http://lightninglu10.react-slide-menu.hellodeploy.com/
+
+![Alt Text](https://github.com/quantfive/react-slide-menu/blob/master/slide.gif?raw=true)
 
 ## Install the package
 Use NPM or Yarn
